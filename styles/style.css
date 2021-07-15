@@ -9,7 +9,6 @@
 .banner{
     background-color: blue;
     display: flex;
-    height: 600px;
 }
 .banner-title{
     width: 485px;
@@ -62,6 +61,8 @@
 }
 
 .player{
+    width: 330px;
+    height: 474px;
     box-shadow: 1px 1px 6px gray;
     border-radius: 5px;
 }
@@ -97,6 +98,62 @@
 .highlights-img img{ 
     width: 480px;
     height: 400px;
+}
+/* <!-- ---------
+           Styles Schedule of Matches
+        ------------------- --> */
+        .schedule-title{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+        }
+        .matches{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-gap: 40px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .match{
+            box-shadow: 1px 1px 6px gray;
+        }
+        .match .date{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: brown;
+            margin-top: 0;
+        }
+        .team{
+            display: flex;
+        }
+        .t-name{
+            margin-left: 10px;
+        }
+        .vs{
+            margin-left: 15px;
+            font-family: 'Poppins', sans-serif;
+
+        }
+ /* Styles of Man Of The Match area */
+ .motm-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.motm-images{
+    margin-top: 40px;
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-row-gap: 40px;
+}
+.motm-img{
+    box-shadow: 1px 1px 6px gray;
+    border-radius: 10px;
+    width:350px}
+.motm-images img {
+    width: 350px;
+    height: 200px;
 }
 /*-----------------
 Footer Styles
@@ -192,6 +249,42 @@ footer img {
         width: 328px;
         height: 248px;
     }
+
+    /* <!-- ---------
+           Styles Schedule of Matches
+        ------------------- --> */
+        .schedule-title{
+            font-size: 30px;
+        }
+        .matches{
+            grid-template-columns: repeat(1 , 1fr);
+            grid-gap: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+ /* Styles of Man Of The Match area */
+ .motm-banner {
+    margin-top: 60px;
+}
+.motm-banner img{
+    width: 350px;
+}
+.motm-images{
+    margin-top: 20px;
+    margin-left: 10px;
+    grid-template-columns: repeat(1 , 1fr);
+    grid-row-gap: 10px;
+}
+.motm-img{
+    box-shadow: 1px 1px 6px gray;
+    border-radius: 10px;
+    width:350px
+}
+.motm-images img {
+    width: 350px;
+    height: 200px;
+}
+
     /*-----------------
     Footer Styles
     ---------------- */
